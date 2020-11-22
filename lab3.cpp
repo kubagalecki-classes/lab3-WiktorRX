@@ -27,12 +27,12 @@ class Kwadrat : public Figura
 {
 public:
     Kwadrat(int a) : Figura(pow(a, 2)){};
-    void id() { cout << "Kwadrat o polu " << getPole() << endl; };
+    void const id() { cout << "Kwadrat o polu " << getPole() << endl; };
 };
 
-Figura id(const Figura&)
+void id(const Figura& b)
 {
-    *this.id();
+    b.id();
 }
 
 int main()

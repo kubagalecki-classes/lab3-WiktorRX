@@ -4,6 +4,8 @@
 
 unsigned int transportujFlota(unsigned int towar)
 {
-    // Twoja implementacja tutaj
+    Stocznia Kuat{}
+    Statek* ISD = Kuat();
+  
     return 0;
 }
