@@ -9,7 +9,7 @@ unsigned int transportujFlota(unsigned int towar)
 
     while (transit < towar)
   {
-    Stocznia Kuat{}
+    Stocznia Kuat{};
     Statek* ISD = Kuat();
     transit += ISD.transportuj();
     
