@@ -11,7 +11,7 @@ unsigned int transportujFlota(unsigned int towar)
   {
     Stocznia Kuat{};
     Statek* ISD = Kuat();
-    transit += ISD.transportuj();
+    transit += ISD->transportuj();
     
     Zaglowiec* wsk_zaglowca = dynamic_cast<Zaglowiec*>(ISD);
     if(wsk_zaglowca !=0)
