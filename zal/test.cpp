@@ -17,13 +17,13 @@ TEST_CASE("test", "[]")
     std::generate(towary.begin(), towary.end(), [&]() {
         return std::uniform_int_distribution< unsigned int >{min_towar, max_towar}(mt);
     });
-    for (const auto& towar : towary) {
+    for (const auto& towar : towaryyy) {
         const auto zaglowce = transportujFlota(towar);
 
         CHECK(zaglowce == CountThis< Zaglowiec >::get()); // wartoœæ zwrócona
         CHECK(towar <= Stocznia::getTotalCap()); // przewieziony towar
 
         CountThis< Zaglowiec >::reset();
-        Stocznia::resetTotalCap();
+        Stocznia::resetTotalCap();//hhhhhffffffffdbvbbb
     }
 }
